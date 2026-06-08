@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerryx | Roblox Scripter</title>
+    <link rel="shortcut icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav>
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fff694"/>
+                        <stop offset="100%" style="stop-color:#ff9500"/>
+                    </linearGradient>
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <g transform="rotate(-12 20 20)" filter="url(#glow)">
+                    <!-- Main square -->
+                    <rect x="4" y="4" width="32" height="32" rx="3" fill="#0c0a08" stroke="url(#iconGradient)" stroke-width="1.5"/>
+                    <!-- Roblox-style cutout -->
+                    <rect x="24" y="6" width="10" height="10" rx="1" fill="#0c0a08" stroke="url(#iconGradient)" stroke-width="1"/>
+                    <!-- Hex pattern lines -->
+                    <path d="M8 28 L14 22 L14 14 L20 10" stroke="url(#iconGradient)" stroke-width="1" fill="none" opacity="0.8"/>
+                    <path d="M10 34 L18 28 L26 28" stroke="url(#iconGradient)" stroke-width="1" fill="none" opacity="0.6"/>
+                    <path d="M28 20 L32 24 L32 32" stroke="url(#iconGradient)" stroke-width="1" fill="none" opacity="0.7"/>
+                    <path d="M6 18 L10 14 L10 8" stroke="url(#iconGradient)" stroke-width="1" fill="none" opacity="0.5"/>
+                    <!-- Hex nodes -->
+                    <circle cx="14" cy="22" r="1.5" fill="#fffb00"/>
+                    <circle cx="18" cy="28" r="1.5" fill="#fffb00"/>
+                    <circle cx="32" cy="24" r="1.5" fill="#fffb00"/>
+                    <circle cx="10" cy="14" r="1.2" fill="#fff694" opacity="0.7"/>
+                </g>
+            </svg>
+            JERRYX<span>.</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#why-me">Why me</a>
+            <a href="#portfolio">Work</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#payment">Payment</a>
+            <a href="#status">Status</a>
+            <a href="#tos">Terms</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero-particles" aria-hidden="true"></div>
+        <div class="hero">
+            <h2>Full-Stack Roblox Scripter</h2>
+            <p class="tagline">Highly efficient Luau scripter powered by a spectrum of skills in other programming fields. GDScript, Python, C# and TypeScript experience applied to Roblox development.</p>
+            
+            <div class="skills-wrapper">
+                <div class="skill-group">
+                    <span class="skill-label">Tools I use</span>
+                    <div id="tools-container" class="tech-stack"></div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Languages I know</span>
+                    <div id="languages-container" class="tech-stack"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h3 class="section-title">01 — About Me</h3>
+        <div class="glass-card">
+            <p>I am an experienced Full-Stack Roblox Scripter with 2 years of experience. I offer fast-delivery & high quality systems to bring your game to life. Having contributed to a lot of projects, I am optimized for both short and long-term scaling.</p>
+            <div class="about-footer">
+                <span><strong>Timezone:</strong> GMT +1</span>
+                <span><strong>Responsiveness:</strong> 16:30 - 22:00 GMT +1</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-me" class="section">
+        <h3 class="section-title">02 — Why choose me</h3>
+        <div class="tos-grid">
+            <div class="glass-card tos-item">
+                <h4>Shipped real projects</h4>
+                <p>I've spent a lot of time working <strong>with professional developers</strong> and shipped <strong>real games</strong> — production-ready builds, not one-off scripts in a vacuum. That experience shows in how I structure systems, communicate, and deliver.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>Deep Luau &amp; Roblox engine knowledge</h4>
+                <p>Strong command of <strong>Luau and the Roblox engine</strong>: <strong>full strict typing</strong> where it matters, <strong>best-practice</strong> patterns, and when performance is critical — <strong>bytecode-level</strong> thinking and optimizations.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>Reliable &amp; trustworthy</h4>
+                <p>I'm straightforward about scope and timelines, I follow through on what we agree, and I treat your project with respect. You get <strong>dependable delivery</strong> and honest communication — not hype.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>Industry-standard tooling</h4>
+                <p><strong>Using industry-standard tools to improve productivity</strong> — version control, profiling, and a solid Roblox/Luau workflow — so delivery stays fast, consistent, and maintainable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h3 class="section-title">03 — Portfolio</h3>
+        <p class="portfolio-note">
+            Note: I rarely record my work, so there aren't a lot of examples.
+        </p>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="videos" type="button">Video Showcases</button>
+            <button class="tab-btn" data-tab="opensource" type="button">My Open Source Projects</button>
+        </div>
+        <div id="video-grid" class="grid active-tab"></div>
+        <div id="os-grid" class="grid"></div>
+        <div id="show-all-wrap" class="show-all-wrap">
+            <button id="show-all-btn" class="btn show-all-btn" type="button">Show all videos</button>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <h3 class="section-title">04 — Pricing</h3>
+        <div class="pricing-container" id="pricing-grid"></div>
+        <p class="pricing-note">* Revenue share is accepted only if the game is already released and earning consistently.</p>
+    </section>
+
+    <section id="delivery" class="section">
+        <h3 class="section-title">05 — Delivery Times</h3>
+        <div class="delivery-container">
+            <div class="glass-card delivery-item">
+                <div class="delivery-header">
+                    <h4>Per-Task Commissions</h4>
+                    <span class="delivery-time">1-7 Days</span>
+                </div>
+                <p>Turnaround varies based on task complexity and my current workload.</p>
+            </div>
+            <div class="glass-card delivery-item">
+                <div class="delivery-header">
+                    <h4>Full Game Development</h4>
+                    <span class="delivery-time">30-60+ Days</span>
+                </div>
+                <p>Timeline depends on project scope, feature complexity, and availability.</p>
+            </div>
+        </div>
+        <div class="glass-card priority-option">
+            <div class="priority-badge">Priority Option</div>
+            <p>Need faster delivery? Add <strong>15-30%</strong> to your commission total and I'll prioritize your project accordingly. This guarantees your project to be worked on first, but it still depends on the task complexity and my availability.</p>
+        </div>
+    </section>
+
+    <section id="payment" class="section">
+        <h3 class="section-title">06 — Payment Options</h3>
+        <div class="payment-grid">
+            <div class="glass-card payment-method">
+                <div class="payment-header">
+                    <span class="payment-icon">Robux (Devex rate)</span>
+                </div>
+                <ul>
+                    <li>Gamepass or Group Payout</li>
+                    <li><strong>Important:</strong> All Roblox taxes must be covered</li>
+                </ul>
+            </div>
+            <div class="glass-card payment-method">
+                <div class="payment-header">
+                    <span class="payment-icon">USD/EUR ($/€)</span>
+                </div>
+                <ul>
+                    <li>PayPal. It can be in either USD or EUR, if you pay in EUR, the exchange rate will be considered.</li>
+                    <li>All transfer fees must be covered by you</li>
+                </ul>
+            </div>
+        </div>
+        <div class="glass-card payment-restriction">
+            <p><strong>Strictly Restricted:</strong> I do <u>not</u> accept Crypto.</p>
+        </div>
+    </section>
+
+    <section id="status" class="section">
+        <h3 class="section-title">07 — Availability</h3>
+        <div class="status-container">
+            <div class="status-card">
+                <span>Short-term availability</span>
+                <span id="short-term-status" class="status-indicator"></span>
+            </div>
+            <div class="status-card">
+                <span>Long-term availability</span>
+                <span id="long-term-status" class="status-indicator"></span>
+            </div>
+            <div class="status-card">
+                <span>Online (Local Time)</span>
+                <span id="online-status" class="status-indicator"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="tos" class="section">
+        <h3 class="section-title">08 — Terms of Service</h3>
+        <div class="tos-grid">
+            <div class="glass-card tos-item">
+                <h4>A. Agreement</h4>
+                <p>By commissioning me, the Buyer acknowledges that they have read, understood, and accept these terms in full. No waiver of a term is valid unless in writing. These terms are here so both sides know what to expect from a Roblox commission. The agreement will take place once he/she has processed the payment, and it is to be effective as soon as the commision is paid for. The same applies to partial upfront payments.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>B. Payment Policy</h4>
+                <p>The Buyer agrees that the payment will be made with the follwing method: <strong>20-40% upfront, the rest on completion</strong> with the exact numbers agreed in writing. The price which is agreed on is final; the buyer is responsible for covering all (if present) transaction taxes/fees. The task <strong>will not get worked on</strong> until the agreed upfront part is paid <em>and</em> the money has been <strong>delivered and available to me</strong> (cleared/received — not merely “sent” or pending). That protects both sides: <strong>Using the instant-delivery payment option</strong> reduces delays and ambiguity about when work can start.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>C. Requirements</h4>
+                <p>The Buyer agrees that they will not add onto the work scope nor do major changes to the current work after the price has been set. Any added work not mentioned originally will be charged an extra fee. Before starting the work, a clear 'to-do' list is needed to confirm the scope of the work. Any changes and extra features can be included afterwards for an extra charge and will be treated as a new commission. Revisions and bugs for the same system in the same work scope are free as long as they meet the requirements stated in the D section of this page.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>D. Bug Fixes</h4>
+                <p>The Buyer acknowledges that he has reviewed the terms and seen all of my work and capabilities. All of the projects showcased on this website represent my work and how my work looks. The client will not be eligible for a refund if he "doesn't like the product". Because he is fully aware of my capabilities and by starting the commission puts trust in me to deliver what he wants. Revisions and bug fixes are free of charge as long as they are in the original work scope and reported within 24 hours starting from when the project has been delivered. After this time range, any problems are assumed to be from your own edits. If cancellation occurs, I am not responsible for continuing or doing bug fixes/adjustments.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>E. Refund Policy</h4>
+                <p>Refunds are only available if I myself cancel the commission and agree to refund. Refunds are generally not provided in any other case, except where required by applicable law. The person commissioning agrees that they will not cancel the commission. If they do so, payments are non refundable to pay for the time and labor to compensate the creator for the work already started.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>F. Communication &amp; Inactivity</h4>
+                <p>If there isn't any answer from both parties for 72 hours despite follow-up attempts, while terms are still being discussed, the deal may be treated as abandoned (time-wasting risk). After a commission is confirmed, prolonged silence may indicate abandonment or bad faith; The work may be paused or stopped, reconfirmation may be required, or the arrangement may be treated according to section E of this page, with the cancellation of the commission and no refund of the upfront payment. This clause exists to reduce fraud and wasted time.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>G. Ownership &amp; License</h4>
+                <p>Once <strong>100% of the agreed price is paid and received</strong>, the buyer will get all the files which will contain the work agreed on together with a non-exclusive license to use the work for commercial use. Resale or redistribution is not allowed unless agreed. The buyer does not get the full rights of the project and is required to provide appropriate credit when the work is used publicly, unless otherwise agreed. I keep all the rights to use the work however I want and show the work here in my portfolio as a showcase.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>H. Scope changes &amp; disputes</h4>
+                <p>Requests outside the agreed scope are new work and may be quoted separately. If you dispute quality, you must report specific, reproducible issues in writing within the Bug Fixes window. These terms are the <strong>entire agreement</strong> for the commission unless we both sign something else. If one part is unenforceable, the rest still applies. In case of any disputes, both parties agree to attempt resolution through direct communication before initiating formal claims.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>I. Work &amp; Delivery</h4>
+                <p>Buyers acknowledge that they are commissioning me their work with full intent and know what they are paying for. Delivery timelines will be agreed upon before the project begins. Delays caused by lack of communication from the buyer may extend delivery time.</p>
+            </div>
+            <div class="glass-card tos-item">
+                <h4>J. Liability</h4>
+                <p>Work is provided <strong>“as is”</strong> to the maximum extent permitted by law. I am <strong>not liable</strong> for indirect, consequential, or lost-profit damages, or for issues caused by your changes, third-party assets, or Roblox/platform changes. My total liability for any claim relating to a commission is limited to <strong>fees you paid me for that specific commission</strong>. You agree to indemnify me against claims arising from content or instructions you provide.</p>
+            </div>
+        </div>
+        <div class="glass-card tos-footer">
+            <p>The contract is open for everyone to see and it is mentioned that customers should thoroughly look through before purchasing, therefore it is the buyer's mistake if they claim to have not seen or agreed. It is also subject to changes without notice, however we will not change it during disputes, nor will the changes apply to the user if the changes are made after the matter.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h3 class="section-title">09 — Contact</h3>
+        <div class="contact-links">
+            <div class="glass-card contact-notice">
+                <p class="notice-title"><strong>Important:</strong></p>
+                <ul>
+                    <li><strong>Include your project details</strong> in your first message. I ignore messages that only say "Hi" or "Are you open for commissions" without context.</li>
+                    <li>I don't give prices for <strong>vague requests</strong> like "rework the system and fix bugs." Price Scope varies wildly, "bugs" could mean one error or dozens of core issues. Without <strong>clear details</strong>, any price would be guesswork. For an <strong>accurate quote</strong>, provide: a clear description of the system, what needs changing, and known issues, or request a <strong>paid code review</strong> first.</li>
+                </ul>
+            </div>
+            <div class="glass-card info-notice">
+                <p><strong>No response?</strong> If I haven't replied, it typically means your message lacked sufficient project details, or I'm currently unavailable or not interested in the project. Please don't take it personally.</p>
+            </div>
+            <div class="links-actions">
+                <a href="https://discord.com/users/1167915739961905294" class="btn" target="_blank">Discord</a>
+                <a href="https://www.roblox.com/users/4541116044/profile" class="btn" target="_blank">Roblox Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/config.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
