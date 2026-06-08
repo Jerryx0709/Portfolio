@@ -1,0 +1,5 @@
+{
+    "Title": "AdminCommands",
+    "Video": "assets/AdminCommands.mp4",
+    "Description": "A custom implementation of admin commands for a game, allowing for various built in commands and the ability to create custom commands with ease."
+}

@@ -547,7 +547,15 @@ header::after {
     overflow: hidden;
 }
 
-.grid .glass-card video,
+.grid .glass-card video {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    border: none;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
 .grid .glass-card img {
     width: 100%;
     display: block;
